@@ -5,6 +5,7 @@ body {
   background-repeat: repeat-y;
   a {
     text-decoration: none;
+    color: inherit;
   }
   div.site-content {
     section.brand {
@@ -34,6 +35,14 @@ body {
     footer {
       nav {
         @include basic_nav
+      }
+      div.bottom {
+        display: flex;
+        justify-content: space-between;
+        p, a {
+          padding: 0.5em 1em;
+          margin: 0;
+        }
       }
     }
   }

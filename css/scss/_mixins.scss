@@ -46,6 +46,8 @@
   justify-content: center;
   div {
     width: 66%;
+    @include bg-color-1;
+    @include button-style;
   }
 }
 
