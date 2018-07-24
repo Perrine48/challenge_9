@@ -1,16 +1,3 @@
-/*HEADER------------------------------------------------------------------*/
-    nav {
-        ul {
-            list-style: none;
-            padding-left: 0;
-
-            li {
-                display: inline-block;
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-            }
-        }
-    }
+@import "variables";
+@import "mixins";
+@import "main";

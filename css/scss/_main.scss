@@ -1,0 +1,61 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../../img/rijksmuseum_dna_wallpaper_a_16_0.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  a {
+    text-decoration: none;
+  }
+  div.site-content {
+    section.brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      nav {
+        @include basic_nav
+      }
+      form.form-input-button-sticked {
+        @include form-input-button-sticked;
+      }
+    }
+    main {
+      a.button-style{
+        @include button-style
+      }
+      a.bg-color-1 {
+        @include bg-color-1
+      }
+      a.bg-color-2 {
+        @include bg-color-2
+      }
+    }
+    footer {
+      nav {
+        @include basic_nav
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    div.site-content {
+      margin: 0 10%;
+    }
+    main {
+      section.section-left {
+        @include section-left
+      }
+
+      section.section-right {
+        @include section-right
+      }
+
+      section.section-center {
+        @include section-center
+      }
+    }
+  }
+}
